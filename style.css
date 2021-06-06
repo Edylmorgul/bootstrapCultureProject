@@ -1,0 +1,193 @@
+html{
+    scroll-behavior: smooth; /* Scroller doucement sur la page */
+}
+
+h2, h3, h4, .nav-item, #transition, footer{
+    text-align: center;
+}
+
+/********************************** HEADER ***********************************/
+header{
+    background: url(./media/main.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh; /* Taille % responsive */
+    border-radius: 0px opx 20px 20px;
+    margin-bottom: 40px;
+}
+
+.collapse{
+    margin-left: 4%;
+}
+
+.nav-item{
+    color: darkslategray;
+    font-weight: bold;
+    padding-right: 45px;
+}
+
+h1{
+    font-size: 5em;
+    padding: 200px 0 0 20%;
+    text-shadow: -3px 3px 2px #BCF5A9;
+    animation: titre ease 3s; /* Necessaire pour les animations de relier aux éléments */
+}
+
+@keyframes titre{ /* keyframe pour animation */
+    0% { /* A 0% de l'animation, je veux ... */
+        opacity: 0; /* Invisible */
+        transform: translate(0px, 350px); /* translate(x,y) ==> Bouge de son point d'origine */
+    }
+    100%{
+        opacity: 1; /* Complétement visible */
+        transform: translate(0px, 0px);
+    }
+}
+
+/********************************** LEFT PART ***********************************/
+#leftPart{
+    background-color: #BCF5A9;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.elements{
+    padding: 70px 0;
+}
+
+.elements img{
+    border-radius: 50%;
+    width: 200px;
+}
+
+.elements p{
+    font-size: 1.2em;
+    display: -webkit-box; /* Arrêter un paragraphe après un certains nombres de lignes, forcer les gens à cliquer sur le site */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden; /* Ce qui dépasse du flux doit être caché */
+    padding-right: 20px;
+}
+
+.elements .button{
+    text-align: right;
+    margin: 15px 4% 0 0;
+}
+
+/********************************** RIGHT PART ***********************************/
+#rightPart{
+    background-color: #9B6833;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.tips{
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.tips h4{
+    position: relative;
+    color: green;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 1px 1px 0 #BCF5A9;
+}
+
+.tips:hover{
+    transform: scale(1.08);
+    transition: 0.6s ease-out;
+}
+
+/********************************** TRANSITION ***********************************/
+#transition{
+    padding: 50px 0;
+}
+
+#transition img{
+    animation: rateau ease 10s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rateau{ /* CSS keyframe simulator */
+    0%{
+        transform: translate(0px, 0px);
+    }
+    10%{
+        transform: translate(79px, -22px);
+    }
+    25%{
+        transform: translate(-4px,-5px);
+    }
+    35%{
+        transform: translate(80px,18px);
+    }
+    50%{
+        transform: translate(-17px,-13px);
+    }
+    60%{
+        transform: translate(57px,-45px);
+    }
+    70%{
+        transform: translate(-11px, -12px);
+    }
+    85%{
+        transform: translate(72px, 7px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+
+/********************************** NEWSLETTER ***********************************/
+#newsletter{
+    background: url(./media/newsletter.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+    height: 370px;
+    width: 70%;
+    min-width: 450px; /* Si l'utilisateur reduit la page, l'élément ne pourra pas descendre en dessous de cette valeur */
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 70px;
+}
+
+#newsletter h4{
+    margin-top: 15px;
+    padding: 100px 0 20px 0;
+    font-size: 2em;
+    text-shadow: 1px 1px 0 #BCF5A9;
+}
+
+#newsletter .input-group{
+    width: 40%;
+    min-width: 350px;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #BCF5A9;
+    padding: 15px 0 4px 0;
+}
+
+/********************************** MEDIA QUERIES ***********************************/
+/* Pour rendre site web responsive */
+@media screen and (max-width: 990px){
+    #rightPart{
+        display: flex; /* Flex place les choses en ligne */
+    }
+    #rightPart h2{
+        display: none;
+    }
+    .tips{
+        height: 130px;
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    h1{
+        font-size: 3em;
+    }
+}

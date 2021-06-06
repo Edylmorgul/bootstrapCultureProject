@@ -1,0 +1,123 @@
+<!DOCTYPE html> <!-- Html:5 ==> Raccourci -->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permaculture, de A à Z</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-success fixed-top">
+            <div class="collapse navbar-collapse">
+                <a href="#" class="nav-item"> <img src="./media/logo.png" alt=""></a>
+                <a href="blog.html" class="nav-item nav-link">Blog</a>
+                <a href="boutique.html" class="nav-item nav-link">Boutique</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+        </nav>
+        <h1> Permaculture, <br> de A à Z </h1>
+    </header>
+
+    <main>
+        <div class="container"> <!-- div.container + tab -->
+            <div class="row">
+                <div class="col-lg-9" id="leftPart"> <!-- Partie gauche -->
+                    <h2>Découvrez nos meilleurs produits</h2>
+
+                    <div class="container">
+                        <div class="row elements">
+                            <div class="col sm-4">
+                                <img src="./media/planter.jpg" alt="Planter">
+                            </div>  
+                            <div class="col sm-8">
+                                <h3>Planter</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Aliquam sint iusto voluptatem cumque et officiis vitae, maxime qui minus ducimus, provident reprehenderit laboriosam natus expedita illo impedit numquam perspiciatis tempore cupiditate! 
+                                    Aperiam.</p>
+                                    <div class="button">
+                                        <button class="btn btn-success">Savoir quand planter...</button>
+                                    </div>                                    
+                            </div> 
+                        </div>
+
+                        <div class="row elements">
+                            <div class="col sm-4">
+                                <img src="./media/cultiver.jpg" alt="Cultiver">
+                            </div>  
+                            <div class="col sm-8">
+                                <h3>Cultiver</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Sed est assumenda obcaecati necessitatibus quas temporibus adipisci? 
+                                    Consequuntur praesentium nulla eum, doloremque tempore ratione est porro! 
+                                    Voluptatibus, tempore ut?</p>
+                                    <div class="button">
+                                        <button class="btn btn-success">Apprendre à mieux cultiver...</button>
+                                    </div>                                   
+                            </div> 
+                        </div>
+
+                        <div class="row elements">
+                            <div class="col sm-4">
+                                <img src="./media/savourer.jpg" alt="Savourer">
+                            </div>  
+                            <div class="col sm-8">
+                                <h3>Savourer</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Aliquam sint iusto voluptatem cumque et officiis vitae, maxime qui minus ducimus, provident reprehenderit laboriosam natus expedita illo impedit numquam perspiciatis tempore cupiditate! 
+                                    Aperiam.</p>
+                                    <div class="button">
+                                        <button class="btn btn-success">Déguster ses propres...</button>
+                                    </div>                                    
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3" id="rightPart"> <!-- Partie droite -->
+                    <h2>Nos astuces</h2>
+                        <div class="tips" style="background: url(./media/preparer.jpeg) no-repeat 50% 50%;">
+                            <h4>Préparer la terre</h4>
+                        </div>
+                        <div class="tips" style="background: url(./media/enrichir.jpeg) no-repeat 50% 50%;">
+                            <h4>Enrichir le sol</h4>
+                        </div>
+                        <div class="tips" style="background: url(./media/proteger.jpg) no-repeat 50% 50%;">
+                            <h4>Protéger ses légumes</h4>
+                        </div>
+                        <div class="tips" style="background: url(./media/arroser.jpg) no-repeat 50% 50%;">
+                            <h4>Comment bien arroser ?</h4>
+                        </div>
+                        <div class="tips" style="background: url(./media/quand-planter.jpeg) no-repeat 50% 50%;">
+                            <h4>Quand planter ses semis ?</h4>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="transition">
+            <img src="./media/transition.png" alt="rateau">
+        </div>
+
+        <div id="newsletter">
+            <h4>Recever une nouvelle astuce tous les jours,
+                inscrivez-vous à notre newsletter !
+            </h4>
+            <div class="class input-group">
+                <input type="email" class="form-control" placeholder="Entrez votre email...">
+                <div class="input-group-append"> <!-- Pour coller le bouton -->
+                    <button class="btn btn-success">Soumettre</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="./media/logo.png" alt="logo">
+    </footer>
+
+    <script src="jquery.min.js"></script> <!-- Attention à l'ordre, toujours finir par script.js-->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
